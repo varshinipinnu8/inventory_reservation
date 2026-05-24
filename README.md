@@ -116,6 +116,7 @@ Implemented using Idempotency-Key header:
 
 Prevents duplicate reservation/confirmation requests
 Returns same response for repeated requests
+
 🧪 How to Run Locally
 npm install
 npm run dev
@@ -128,6 +129,7 @@ npm run seed
 🌐 Deployment
 Frontend: Vercel
 Database: Supabase / Neon PostgreSQL
+
 ⚠️ Trade-offs
 Cron-based expiry may have slight delay
 Redis locking improves safety but adds complexity
@@ -137,6 +139,3 @@ Concurrency-safe stock reservation
 Transaction-based inventory updates
 Designing systems with race condition protection
 Proper API error handling (409 / 410)
-👨‍💻 Author
-
-Built for Allo Engineering take-home assignment
